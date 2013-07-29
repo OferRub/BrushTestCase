@@ -92,25 +92,6 @@
 		4F9067FE178BED1400BE9B09 /* NormalColor.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 4F9067A4178BED1400BE9B09 /* NormalColor.fsh */; };
 		4F9067FF178BED1400BE9B09 /* Overlay.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 4F9067A5178BED1400BE9B09 /* Overlay.fsh */; };
 		4F906800178BED1400BE9B09 /* PMANormal.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 4F9067A6178BED1400BE9B09 /* PMANormal.fsh */; };
-		4F906801178BED1400BE9B09 /* ProcessAlgebra.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 4F9067A7178BED1400BE9B09 /* ProcessAlgebra.fsh */; };
-		4F906802178BED1400BE9B09 /* ProcessColorDodgeDiv.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 4F9067A8178BED1400BE9B09 /* ProcessColorDodgeDiv.fsh */; };
-		4F906803178BED1400BE9B09 /* ProcessColorDodgeMul.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 4F9067A9178BED1400BE9B09 /* ProcessColorDodgeMul.fsh */; };
-		4F906804178BED1400BE9B09 /* ProcessDarken.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 4F9067AA178BED1400BE9B09 /* ProcessDarken.fsh */; };
-		4F906805178BED1400BE9B09 /* ProcessMultiply.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 4F9067AB178BED1400BE9B09 /* ProcessMultiply.fsh */; };
-		4F906806178BED1400BE9B09 /* ProcessNormalAdd.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 4F9067AC178BED1400BE9B09 /* ProcessNormalAdd.fsh */; };
-		4F906807178BED1400BE9B09 /* ProcessNormalMul.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 4F9067AD178BED1400BE9B09 /* ProcessNormalMul.fsh */; };
-		4F906808178BED1400BE9B09 /* ProcessOverlayAdd.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 4F9067AE178BED1400BE9B09 /* ProcessOverlayAdd.fsh */; };
-		4F906809178BED1400BE9B09 /* ProcessOverlayDiv.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 4F9067AF178BED1400BE9B09 /* ProcessOverlayDiv.fsh */; };
-		4F90680A178BED1400BE9B09 /* ProcessOverlayMul.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 4F9067B0178BED1400BE9B09 /* ProcessOverlayMul.fsh */; };
-		4F90680B178BED1400BE9B09 /* ProcessOverlayRoot.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 4F9067B1178BED1400BE9B09 /* ProcessOverlayRoot.fsh */; };
-		4F90680C178BED1400BE9B09 /* ProcessOverlaySquare.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 4F9067B2178BED1400BE9B09 /* ProcessOverlaySquare.fsh */; };
-		4F90680D178BED1400BE9B09 /* ProcessParty.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 4F9067B3178BED1400BE9B09 /* ProcessParty.fsh */; };
-		4F90680E178BED1400BE9B09 /* ProcessScreenMul.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 4F9067B4178BED1400BE9B09 /* ProcessScreenMul.fsh */; };
-		4F90680F178BED1400BE9B09 /* ProcessSimpleAlgebra.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 4F9067B5178BED1400BE9B09 /* ProcessSimpleAlgebra.fsh */; };
-		4F906810178BED1400BE9B09 /* ProcessSoftlight.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 4F9067B6178BED1400BE9B09 /* ProcessSoftlight.fsh */; };
-		4F906811178BED1400BE9B09 /* ProcessSoftlightMul.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 4F9067B7178BED1400BE9B09 /* ProcessSoftlightMul.fsh */; };
-		4F906812178BED1400BE9B09 /* ProcessSoftlightSquare.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 4F9067B8178BED1400BE9B09 /* ProcessSoftlightSquare.fsh */; };
-		4F906813178BED1400BE9B09 /* ProcessSoftlightSquareRoot.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 4F9067B9178BED1400BE9B09 /* ProcessSoftlightSquareRoot.fsh */; };
 		4F906814178BED1400BE9B09 /* Saturation.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 4F9067BA178BED1400BE9B09 /* Saturation.fsh */; };
 		4F906815178BED1400BE9B09 /* Screen.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 4F9067BB178BED1400BE9B09 /* Screen.fsh */; };
 		4F906816178BED1400BE9B09 /* Set.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 4F9067BC178BED1400BE9B09 /* Set.fsh */; };
@@ -250,25 +231,6 @@
 		4F9067A4178BED1400BE9B09 /* NormalColor.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = NormalColor.fsh; sourceTree = "<group>"; };
 		4F9067A5178BED1400BE9B09 /* Overlay.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Overlay.fsh; sourceTree = "<group>"; };
 		4F9067A6178BED1400BE9B09 /* PMANormal.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = PMANormal.fsh; sourceTree = "<group>"; };
-		4F9067A7178BED1400BE9B09 /* ProcessAlgebra.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = ProcessAlgebra.fsh; sourceTree = "<group>"; };
-		4F9067A8178BED1400BE9B09 /* ProcessColorDodgeDiv.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = ProcessColorDodgeDiv.fsh; sourceTree = "<group>"; };
-		4F9067A9178BED1400BE9B09 /* ProcessColorDodgeMul.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = ProcessColorDodgeMul.fsh; sourceTree = "<group>"; };
-		4F9067AA178BED1400BE9B09 /* ProcessDarken.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = ProcessDarken.fsh; sourceTree = "<group>"; };
-		4F9067AB178BED1400BE9B09 /* ProcessMultiply.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = ProcessMultiply.fsh; sourceTree = "<group>"; };
-		4F9067AC178BED1400BE9B09 /* ProcessNormalAdd.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = ProcessNormalAdd.fsh; sourceTree = "<group>"; };
-		4F9067AD178BED1400BE9B09 /* ProcessNormalMul.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = ProcessNormalMul.fsh; sourceTree = "<group>"; };
-		4F9067AE178BED1400BE9B09 /* ProcessOverlayAdd.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = ProcessOverlayAdd.fsh; sourceTree = "<group>"; };
-		4F9067AF178BED1400BE9B09 /* ProcessOverlayDiv.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = ProcessOverlayDiv.fsh; sourceTree = "<group>"; };
-		4F9067B0178BED1400BE9B09 /* ProcessOverlayMul.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = ProcessOverlayMul.fsh; sourceTree = "<group>"; };
-		4F9067B1178BED1400BE9B09 /* ProcessOverlayRoot.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = ProcessOverlayRoot.fsh; sourceTree = "<group>"; };
-		4F9067B2178BED1400BE9B09 /* ProcessOverlaySquare.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = ProcessOverlaySquare.fsh; sourceTree = "<group>"; };
-		4F9067B3178BED1400BE9B09 /* ProcessParty.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = ProcessParty.fsh; sourceTree = "<group>"; };
-		4F9067B4178BED1400BE9B09 /* ProcessScreenMul.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = ProcessScreenMul.fsh; sourceTree = "<group>"; };
-		4F9067B5178BED1400BE9B09 /* ProcessSimpleAlgebra.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = ProcessSimpleAlgebra.fsh; sourceTree = "<group>"; };
-		4F9067B6178BED1400BE9B09 /* ProcessSoftlight.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = ProcessSoftlight.fsh; sourceTree = "<group>"; };
-		4F9067B7178BED1400BE9B09 /* ProcessSoftlightMul.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = ProcessSoftlightMul.fsh; sourceTree = "<group>"; };
-		4F9067B8178BED1400BE9B09 /* ProcessSoftlightSquare.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = ProcessSoftlightSquare.fsh; sourceTree = "<group>"; };
-		4F9067B9178BED1400BE9B09 /* ProcessSoftlightSquareRoot.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = ProcessSoftlightSquareRoot.fsh; sourceTree = "<group>"; };
 		4F9067BA178BED1400BE9B09 /* Saturation.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Saturation.fsh; sourceTree = "<group>"; };
 		4F9067BB178BED1400BE9B09 /* Screen.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Screen.fsh; sourceTree = "<group>"; };
 		4F9067BC178BED1400BE9B09 /* Set.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Set.fsh; sourceTree = "<group>"; };
@@ -582,25 +544,6 @@
 				4F9067A4178BED1400BE9B09 /* NormalColor.fsh */,
 				4F9067A5178BED1400BE9B09 /* Overlay.fsh */,
 				4F9067A6178BED1400BE9B09 /* PMANormal.fsh */,
-				4F9067A7178BED1400BE9B09 /* ProcessAlgebra.fsh */,
-				4F9067A8178BED1400BE9B09 /* ProcessColorDodgeDiv.fsh */,
-				4F9067A9178BED1400BE9B09 /* ProcessColorDodgeMul.fsh */,
-				4F9067AA178BED1400BE9B09 /* ProcessDarken.fsh */,
-				4F9067AB178BED1400BE9B09 /* ProcessMultiply.fsh */,
-				4F9067AC178BED1400BE9B09 /* ProcessNormalAdd.fsh */,
-				4F9067AD178BED1400BE9B09 /* ProcessNormalMul.fsh */,
-				4F9067AE178BED1400BE9B09 /* ProcessOverlayAdd.fsh */,
-				4F9067AF178BED1400BE9B09 /* ProcessOverlayDiv.fsh */,
-				4F9067B0178BED1400BE9B09 /* ProcessOverlayMul.fsh */,
-				4F9067B1178BED1400BE9B09 /* ProcessOverlayRoot.fsh */,
-				4F9067B2178BED1400BE9B09 /* ProcessOverlaySquare.fsh */,
-				4F9067B3178BED1400BE9B09 /* ProcessParty.fsh */,
-				4F9067B4178BED1400BE9B09 /* ProcessScreenMul.fsh */,
-				4F9067B5178BED1400BE9B09 /* ProcessSimpleAlgebra.fsh */,
-				4F9067B6178BED1400BE9B09 /* ProcessSoftlight.fsh */,
-				4F9067B7178BED1400BE9B09 /* ProcessSoftlightMul.fsh */,
-				4F9067B8178BED1400BE9B09 /* ProcessSoftlightSquare.fsh */,
-				4F9067B9178BED1400BE9B09 /* ProcessSoftlightSquareRoot.fsh */,
 				4F9067BA178BED1400BE9B09 /* Saturation.fsh */,
 				4F9067BB178BED1400BE9B09 /* Screen.fsh */,
 				4F9067BC178BED1400BE9B09 /* Set.fsh */,
@@ -705,25 +648,6 @@
 				4F8862B8178EDDBC00D8A367 /* Ink.fsh in Resources */,
 				4F9067FF178BED1400BE9B09 /* Overlay.fsh in Resources */,
 				4F906800178BED1400BE9B09 /* PMANormal.fsh in Resources */,
-				4F906801178BED1400BE9B09 /* ProcessAlgebra.fsh in Resources */,
-				4F906802178BED1400BE9B09 /* ProcessColorDodgeDiv.fsh in Resources */,
-				4F906803178BED1400BE9B09 /* ProcessColorDodgeMul.fsh in Resources */,
-				4F906804178BED1400BE9B09 /* ProcessDarken.fsh in Resources */,
-				4F906805178BED1400BE9B09 /* ProcessMultiply.fsh in Resources */,
-				4F906806178BED1400BE9B09 /* ProcessNormalAdd.fsh in Resources */,
-				4F906807178BED1400BE9B09 /* ProcessNormalMul.fsh in Resources */,
-				4F906808178BED1400BE9B09 /* ProcessOverlayAdd.fsh in Resources */,
-				4F906809178BED1400BE9B09 /* ProcessOverlayDiv.fsh in Resources */,
-				4F90680A178BED1400BE9B09 /* ProcessOverlayMul.fsh in Resources */,
-				4F90680B178BED1400BE9B09 /* ProcessOverlayRoot.fsh in Resources */,
-				4F90680C178BED1400BE9B09 /* ProcessOverlaySquare.fsh in Resources */,
-				4F90680D178BED1400BE9B09 /* ProcessParty.fsh in Resources */,
-				4F90680E178BED1400BE9B09 /* ProcessScreenMul.fsh in Resources */,
-				4F90680F178BED1400BE9B09 /* ProcessSimpleAlgebra.fsh in Resources */,
-				4F906810178BED1400BE9B09 /* ProcessSoftlight.fsh in Resources */,
-				4F906811178BED1400BE9B09 /* ProcessSoftlightMul.fsh in Resources */,
-				4F906812178BED1400BE9B09 /* ProcessSoftlightSquare.fsh in Resources */,
-				4F906813178BED1400BE9B09 /* ProcessSoftlightSquareRoot.fsh in Resources */,
 				4F906814178BED1400BE9B09 /* Saturation.fsh in Resources */,
 				4F906815178BED1400BE9B09 /* Screen.fsh in Resources */,
 				4F906816178BED1400BE9B09 /* Set.fsh in Resources */,

@@ -12,7 +12,7 @@
 
 #define RGBA(R,G,B,A)   [UIColor colorWithRed:(float) R/255 green:(float) G/255 blue:(float) B/255 alpha: A]
 
-@interface ViewController : UIViewController <UIScrollViewDelegate,DMCollageViewDeleagte, UIImagePickerControllerDelegate,UINavigationControllerDelegate>
+@interface ViewController : UIViewController <UIScrollViewDelegate, UIImagePickerControllerDelegate,UINavigationControllerDelegate>
 {
     IBOutlet    DMCollageView * collageView;
 }
