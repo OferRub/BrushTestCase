@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "1.0">
+   <FileBreakpoints>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "BrushTestCase/DMCollageView.m"
+         timestampString = "396712239.213145"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "735"
+         endingLineNumber = "735"
+         landmarkName = "-touchesMoved:withEvent:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "BrushTestCase/DMCollageView.m"
+         timestampString = "396712239.213145"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "696"
+         endingLineNumber = "696"
+         landmarkName = "-touchesBegan:withEvent:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "Yes"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "../GFXLab/DMGraphics/DMGraphics/Core/DMFactory.m"
+         timestampString = "394969709.877304"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "541"
+         endingLineNumber = "541"
+         landmarkName = "-loadImageWithPath:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "../GFXLab/DMGraphics/DMGraphics/Core/DMBlend.m"
+         timestampString = "394984782.174374"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "409"
+         endingLineNumber = "409"
+         landmarkName = "-processElementWithTexture:viewportRect:renderTarget:sourceCroppedRect:scaledSize:repeatOverlay:cropOverlay:withCrop:rotation:flipX:flipY:isCenter:isFlipSource:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "../GFXLab/DMGraphics/DMGraphics/Interface/DMBaseElement.m"
+         timestampString = "394985844.678642"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "1865"
+         endingLineNumber = "1865"
+         landmarkName = "-coreProcessWithBrush:targetTexture:targetRect:targetMaxRect:rotation:scaledSize:depthLevel:withCrop:sourceRect:brushPosition:postBGR:isRotate:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "Yes"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "../GFXLab/DMGraphics/DMGraphics/Interface/DMBaseElement.m"
+         timestampString = "394985844.678642"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "863"
+         endingLineNumber = "863"
+         landmarkName = "-initWithBlendArray:isMain:withRect:isAlpha:instances:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "Yes"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "../GFXLab/DMGraphicsLean/DMGraphics/Core/DMBlend.m"
+         timestampString = "396695551.14687"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "605"
+         endingLineNumber = "605"
+         landmarkName = "-processBrushWithTexture:viewportRect:renderTarget:sourceCroppedRect:scaledSize:repeatOverlay:cropOverlay:withCrop:rotation:flipX:flipY:brushPosition:isCenter:isFlipSource:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "../GFXLab/DMGraphicsLean/DMGraphics/Core/DMBlend.m"
+         timestampString = "396695551.14687"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "713"
+         endingLineNumber = "713"
+         landmarkName = "-processBrushWithTexture:viewportRect:renderTarget:sourceCroppedRect:scaledSize:repeatOverlay:cropOverlay:withCrop:rotation:flipX:flipY:brushPosition:isCenter:isFlipSource:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "Yes"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "../GFXLab/DMGraphicsLean/DMGraphics/Core/DMBlend.m"
+         timestampString = "396695551.14687"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "634"
+         endingLineNumber = "634"
+         landmarkName = "-processBrushWithTexture:viewportRect:renderTarget:sourceCroppedRect:scaledSize:repeatOverlay:cropOverlay:withCrop:rotation:flipX:flipY:brushPosition:isCenter:isFlipSource:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "../GFXLab/DMGraphicsLean/DMGraphics/Interface/DMBrush.m"
+         timestampString = "396711806.892115"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "524"
+         endingLineNumber = "524"
+         landmarkName = "-drawPointList:withSize:intoTarget:withBackground:startLength:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "Yes"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "../GFXLab/DMGraphicsLean/DMGraphics/Core/DMBlend.m"
+         timestampString = "396695551.14687"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "731"
+         endingLineNumber = "731"
+         landmarkName = "-processBrushWithTexture:viewportRect:renderTarget:sourceCroppedRect:scaledSize:repeatOverlay:cropOverlay:withCrop:rotation:flipX:flipY:brushPosition:isCenter:isFlipSource:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "BrushTestCase/DMCollageView.m"
+         timestampString = "396712239.213145"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "684"
+         endingLineNumber = "684"
+         landmarkName = "-touchesBegan:withEvent:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "Yes"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "../GFXLab/DMGraphicsLean/DMGraphics/Core/Extras/DMTexture+Extra.m"
+         timestampString = "396706622.322364"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "132"
+         endingLineNumber = "132"
+         landmarkName = "-makeTarget:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "Yes"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "../GFXLab/DMGraphicsLean/DMGraphics/Core/Extras/DMTexture+Extra.m"
+         timestampString = "396706622.322364"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "157"
+         endingLineNumber = "157"
+         landmarkName = "-makeBufferTarget:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "../GFXLab/DMGraphicsLean/DMGraphics/Core/DMBlend.m"
+         timestampString = "396711806.892115"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "2305"
+         endingLineNumber = "2305"
+         landmarkName = "-drawSprite:withBackground:withPosition:withScale:isAdd:isErase:isFilter:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "Yes"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "../GFXLab/DMGraphicsLean/DMGraphics/Core/DMBlend.m"
+         timestampString = "396711806.892115"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "2371"
+         endingLineNumber = "2371"
+         landmarkName = "-drawSprite:withBackground:withPosition:withScale:isAdd:isErase:isFilter:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "Yes"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "../GFXLab/DMGraphicsLean/DMGraphics/Core/DMBlend.m"
+         timestampString = "396711806.892115"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "2406"
+         endingLineNumber = "2406"
+         landmarkName = "-drawSprite:withBackground:withPosition:withScale:isAdd:isErase:isFilter:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "Yes"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "../GFXLab/DMGraphicsLean/DMGraphics/Core/Extras/DMTexture+Extra.m"
+         timestampString = "396706622.322364"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "109"
+         endingLineNumber = "109"
+         landmarkName = "-makeTarget:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "Yes"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "../GFXLab/DMGraphicsLean/DMGraphics/Interface/DMBrush.m"
+         timestampString = "396706359.938187"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "201"
+         endingLineNumber = "201"
+         landmarkName = "-smoothCurveSample:maxDelta:lastNode:startLength:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "Yes"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "../GFXLab/DMGraphicsLean/DMGraphics/Interface/DMBrush.m"
+         timestampString = "396711806.892115"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "367"
+         endingLineNumber = "367"
+         landmarkName = "-smoothCurveSample:maxDelta:lastNode:startLength:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "Yes"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "../GFXLab/DMGraphicsLean/DMGraphics/Core/DMFactory.m"
+         timestampString = "396708793.185745"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "224"
+         endingLineNumber = "224"
+         landmarkName = "-initWithFilePath:width:height:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "Yes"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "../GFXLab/DMGraphicsLean/DMGraphics/Core/Extras/DMBlend+Extra.m"
+         timestampString = "396714591.947703"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "292"
+         endingLineNumber = "292"
+         landmarkName = "-coreInit:transformable:isPMA:instances:"
+         landmarkType = "5">
+      </FileBreakpoint>
+   </FileBreakpoints>
+</Bucket>
