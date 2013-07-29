@@ -57,13 +57,10 @@
 		4F90674D1789905D00BE9B09 /* SplashView~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F90674A1789900600BE9B09 /* SplashView~ipad.xib */; };
 		4F90674E1789994300BE9B09 /* DMCollageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F90674517898EDA00BE9B09 /* DMCollageView.m */; };
 		4F906750178AB44000BE9B09 /* giant.pvr in Resources */ = {isa = PBXBuildFile; fileRef = 4F90674F178AB42400BE9B09 /* giant.pvr */; };
-		4F9067D3178BED1400BE9B09 /* DMBaked.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F906756178BED1400BE9B09 /* DMBaked.m */; };
 		4F9067D4178BED1400BE9B09 /* DMBlend.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F906758178BED1400BE9B09 /* DMBlend.m */; };
 		4F9067D5178BED1400BE9B09 /* DMContextLock.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F90675A178BED1400BE9B09 /* DMContextLock.m */; };
 		4F9067D6178BED1400BE9B09 /* DMFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F90675D178BED1400BE9B09 /* DMFactory.m */; };
-		4F9067D7178BED1400BE9B09 /* DMPipeline.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F90675F178BED1400BE9B09 /* DMPipeline.m */; };
 		4F9067D8178BED1400BE9B09 /* DMTexture.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F906761178BED1400BE9B09 /* DMTexture.m */; };
-		4F9067D9178BED1400BE9B09 /* DMTransform.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F906763178BED1400BE9B09 /* DMTransform.m */; };
 		4F9067DA178BED1400BE9B09 /* DMView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F906765178BED1400BE9B09 /* DMView.m */; };
 		4F9067DB178BED1400BE9B09 /* FileInZipInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F906769178BED1400BE9B09 /* FileInZipInfo.m */; };
 		4F9067DC178BED1400BE9B09 /* ZipException.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F90676B178BED1400BE9B09 /* ZipException.m */; };
@@ -74,16 +71,8 @@
 		4F9067E1178BED1400BE9B09 /* DMBlend+Extra.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F906776178BED1400BE9B09 /* DMBlend+Extra.m */; };
 		4F9067E2178BED1400BE9B09 /* DMTexture+Extra.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F906778178BED1400BE9B09 /* DMTexture+Extra.m */; };
 		4F9067E3178BED1400BE9B09 /* DMGraphics.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F90677B178BED1400BE9B09 /* DMGraphics.m */; };
-		4F9067E4178BED1400BE9B09 /* Camera.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F90677E178BED1400BE9B09 /* Camera.m */; };
 		4F9067E5178BED1400BE9B09 /* DMBaseElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F906780178BED1400BE9B09 /* DMBaseElement.m */; };
-		4F9067E6178BED1400BE9B09 /* DMCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F906782178BED1400BE9B09 /* DMCamera.m */; };
-		4F9067E7178BED1400BE9B09 /* DMFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F906784178BED1400BE9B09 /* DMFilter.m */; };
 		4F9067E8178BED1400BE9B09 /* DMProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F906786178BED1400BE9B09 /* DMProcessor.m */; };
-		4F9067E9178BED1400BE9B09 /* DMTextElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F906788178BED1400BE9B09 /* DMTextElement.m */; };
-		4F9067EA178BED1400BE9B09 /* DMVideo.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F90678A178BED1400BE9B09 /* DMVideo.m */; };
-		4F9067EB178BED1400BE9B09 /* CameraFrameNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F90678D178BED1400BE9B09 /* CameraFrameNode.m */; };
-		4F9067EC178BED1400BE9B09 /* DMCamera+Extra.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F90678F178BED1400BE9B09 /* DMCamera+Extra.m */; };
-		4F9067ED178BED1400BE9B09 /* DMVideo+Extra.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F906791178BED1400BE9B09 /* DMVideo+Extra.m */; };
 		4F9067EE178BED1400BE9B09 /* Add.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 4F906794178BED1400BE9B09 /* Add.fsh */; };
 		4F9067EF178BED1400BE9B09 /* Color.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 4F906795178BED1400BE9B09 /* Color.fsh */; };
 		4F9067F0178BED1400BE9B09 /* ColorBalance.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 4F906796178BED1400BE9B09 /* ColorBalance.fsh */; };
@@ -208,8 +197,6 @@
 		4F9067491789900600BE9B09 /* SplashView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SplashView.xib; sourceTree = "<group>"; };
 		4F90674A1789900600BE9B09 /* SplashView~ipad.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = "SplashView~ipad.xib"; sourceTree = "<group>"; };
 		4F90674F178AB42400BE9B09 /* giant.pvr */ = {isa = PBXFileReference; lastKnownFileType = file; path = giant.pvr; sourceTree = "<group>"; };
-		4F906755178BED1400BE9B09 /* DMBaked.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMBaked.h; sourceTree = "<group>"; };
-		4F906756178BED1400BE9B09 /* DMBaked.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMBaked.m; sourceTree = "<group>"; };
 		4F906757178BED1400BE9B09 /* DMBlend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMBlend.h; sourceTree = "<group>"; };
 		4F906758178BED1400BE9B09 /* DMBlend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMBlend.m; sourceTree = "<group>"; };
 		4F906759178BED1400BE9B09 /* DMContextLock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMContextLock.h; sourceTree = "<group>"; };
@@ -217,12 +204,8 @@
 		4F90675B178BED1400BE9B09 /* DMDataTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMDataTypes.h; sourceTree = "<group>"; };
 		4F90675C178BED1400BE9B09 /* DMFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMFactory.h; sourceTree = "<group>"; };
 		4F90675D178BED1400BE9B09 /* DMFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMFactory.m; sourceTree = "<group>"; };
-		4F90675E178BED1400BE9B09 /* DMPipeline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMPipeline.h; sourceTree = "<group>"; };
-		4F90675F178BED1400BE9B09 /* DMPipeline.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMPipeline.m; sourceTree = "<group>"; };
 		4F906760178BED1400BE9B09 /* DMTexture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMTexture.h; sourceTree = "<group>"; };
 		4F906761178BED1400BE9B09 /* DMTexture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMTexture.m; sourceTree = "<group>"; };
-		4F906762178BED1400BE9B09 /* DMTransform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMTransform.h; sourceTree = "<group>"; };
-		4F906763178BED1400BE9B09 /* DMTransform.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMTransform.m; sourceTree = "<group>"; };
 		4F906764178BED1400BE9B09 /* DMView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMView.h; sourceTree = "<group>"; };
 		4F906765178BED1400BE9B09 /* DMView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMView.m; sourceTree = "<group>"; };
 		4F906768178BED1400BE9B09 /* FileInZipInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileInZipInfo.h; sourceTree = "<group>"; };
@@ -244,26 +227,10 @@
 		4F906779178BED1400BE9B09 /* DMGraphics-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DMGraphics-Prefix.pch"; sourceTree = "<group>"; };
 		4F90677A178BED1400BE9B09 /* DMGraphics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMGraphics.h; sourceTree = "<group>"; };
 		4F90677B178BED1400BE9B09 /* DMGraphics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMGraphics.m; sourceTree = "<group>"; };
-		4F90677D178BED1400BE9B09 /* Camera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Camera.h; sourceTree = "<group>"; };
-		4F90677E178BED1400BE9B09 /* Camera.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Camera.m; sourceTree = "<group>"; };
 		4F90677F178BED1400BE9B09 /* DMBaseElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMBaseElement.h; sourceTree = "<group>"; };
 		4F906780178BED1400BE9B09 /* DMBaseElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMBaseElement.m; sourceTree = "<group>"; };
-		4F906781178BED1400BE9B09 /* DMCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMCamera.h; sourceTree = "<group>"; };
-		4F906782178BED1400BE9B09 /* DMCamera.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMCamera.m; sourceTree = "<group>"; };
-		4F906783178BED1400BE9B09 /* DMFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMFilter.h; sourceTree = "<group>"; };
-		4F906784178BED1400BE9B09 /* DMFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMFilter.m; sourceTree = "<group>"; };
 		4F906785178BED1400BE9B09 /* DMProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMProcessor.h; sourceTree = "<group>"; };
 		4F906786178BED1400BE9B09 /* DMProcessor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMProcessor.m; sourceTree = "<group>"; };
-		4F906787178BED1400BE9B09 /* DMTextElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMTextElement.h; sourceTree = "<group>"; };
-		4F906788178BED1400BE9B09 /* DMTextElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMTextElement.m; sourceTree = "<group>"; };
-		4F906789178BED1400BE9B09 /* DMVideo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMVideo.h; sourceTree = "<group>"; };
-		4F90678A178BED1400BE9B09 /* DMVideo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMVideo.m; sourceTree = "<group>"; };
-		4F90678C178BED1400BE9B09 /* CameraFrameNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraFrameNode.h; sourceTree = "<group>"; };
-		4F90678D178BED1400BE9B09 /* CameraFrameNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraFrameNode.m; sourceTree = "<group>"; };
-		4F90678E178BED1400BE9B09 /* DMCamera+Extra.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DMCamera+Extra.h"; sourceTree = "<group>"; };
-		4F90678F178BED1400BE9B09 /* DMCamera+Extra.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "DMCamera+Extra.m"; sourceTree = "<group>"; };
-		4F906790178BED1400BE9B09 /* DMVideo+Extra.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DMVideo+Extra.h"; sourceTree = "<group>"; };
-		4F906791178BED1400BE9B09 /* DMVideo+Extra.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "DMVideo+Extra.m"; sourceTree = "<group>"; };
 		4F906794178BED1400BE9B09 /* Add.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Add.fsh; sourceTree = "<group>"; };
 		4F906795178BED1400BE9B09 /* Color.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Color.fsh; sourceTree = "<group>"; };
 		4F906796178BED1400BE9B09 /* ColorBalance.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = ColorBalance.fsh; sourceTree = "<group>"; };
@@ -495,8 +462,6 @@
 		4F906754178BED1400BE9B09 /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				4F906755178BED1400BE9B09 /* DMBaked.h */,
-				4F906756178BED1400BE9B09 /* DMBaked.m */,
 				4F906757178BED1400BE9B09 /* DMBlend.h */,
 				4F906758178BED1400BE9B09 /* DMBlend.m */,
 				4F906759178BED1400BE9B09 /* DMContextLock.h */,
@@ -504,12 +469,8 @@
 				4F90675B178BED1400BE9B09 /* DMDataTypes.h */,
 				4F90675C178BED1400BE9B09 /* DMFactory.h */,
 				4F90675D178BED1400BE9B09 /* DMFactory.m */,
-				4F90675E178BED1400BE9B09 /* DMPipeline.h */,
-				4F90675F178BED1400BE9B09 /* DMPipeline.m */,
 				4F906760178BED1400BE9B09 /* DMTexture.h */,
 				4F906761178BED1400BE9B09 /* DMTexture.m */,
-				4F906762178BED1400BE9B09 /* DMTransform.h */,
-				4F906763178BED1400BE9B09 /* DMTransform.m */,
 				4F906764178BED1400BE9B09 /* DMView.h */,
 				4F906765178BED1400BE9B09 /* DMView.m */,
 				4F906766178BED1400BE9B09 /* Externals */,
@@ -561,20 +522,10 @@
 			children = (
 				4F906829178BF18A00BE9B09 /* DMBrush.h */,
 				4F90682A178BF18A00BE9B09 /* DMBrush.m */,
-				4F90677D178BED1400BE9B09 /* Camera.h */,
-				4F90677E178BED1400BE9B09 /* Camera.m */,
 				4F90677F178BED1400BE9B09 /* DMBaseElement.h */,
 				4F906780178BED1400BE9B09 /* DMBaseElement.m */,
-				4F906781178BED1400BE9B09 /* DMCamera.h */,
-				4F906782178BED1400BE9B09 /* DMCamera.m */,
-				4F906783178BED1400BE9B09 /* DMFilter.h */,
-				4F906784178BED1400BE9B09 /* DMFilter.m */,
 				4F906785178BED1400BE9B09 /* DMProcessor.h */,
 				4F906786178BED1400BE9B09 /* DMProcessor.m */,
-				4F906787178BED1400BE9B09 /* DMTextElement.h */,
-				4F906788178BED1400BE9B09 /* DMTextElement.m */,
-				4F906789178BED1400BE9B09 /* DMVideo.h */,
-				4F90678A178BED1400BE9B09 /* DMVideo.m */,
 				4F90678B178BED1400BE9B09 /* Extras */,
 			);
 			path = Interface;
@@ -583,12 +534,6 @@
 		4F90678B178BED1400BE9B09 /* Extras */ = {
 			isa = PBXGroup;
 			children = (
-				4F90678C178BED1400BE9B09 /* CameraFrameNode.h */,
-				4F90678D178BED1400BE9B09 /* CameraFrameNode.m */,
-				4F90678E178BED1400BE9B09 /* DMCamera+Extra.h */,
-				4F90678F178BED1400BE9B09 /* DMCamera+Extra.m */,
-				4F906790178BED1400BE9B09 /* DMVideo+Extra.h */,
-				4F906791178BED1400BE9B09 /* DMVideo+Extra.m */,
 			);
 			path = Extras;
 			sourceTree = "<group>";
@@ -829,13 +774,10 @@
 				4F90661917898D3E00BE9B09 /* main.m in Sources */,
 				4F90661D17898D3E00BE9B09 /* AppDelegate.m in Sources */,
 				4F90662617898D3E00BE9B09 /* ViewController.m in Sources */,
-				4F9067D3178BED1400BE9B09 /* DMBaked.m in Sources */,
 				4F9067D4178BED1400BE9B09 /* DMBlend.m in Sources */,
 				4F9067D5178BED1400BE9B09 /* DMContextLock.m in Sources */,
 				4F9067D6178BED1400BE9B09 /* DMFactory.m in Sources */,
-				4F9067D7178BED1400BE9B09 /* DMPipeline.m in Sources */,
 				4F9067D8178BED1400BE9B09 /* DMTexture.m in Sources */,
-				4F9067D9178BED1400BE9B09 /* DMTransform.m in Sources */,
 				4F9067DA178BED1400BE9B09 /* DMView.m in Sources */,
 				4F9067DB178BED1400BE9B09 /* FileInZipInfo.m in Sources */,
 				4F9067DC178BED1400BE9B09 /* ZipException.m in Sources */,
@@ -846,16 +788,8 @@
 				4F9067E1178BED1400BE9B09 /* DMBlend+Extra.m in Sources */,
 				4F9067E2178BED1400BE9B09 /* DMTexture+Extra.m in Sources */,
 				4F9067E3178BED1400BE9B09 /* DMGraphics.m in Sources */,
-				4F9067E4178BED1400BE9B09 /* Camera.m in Sources */,
 				4F9067E5178BED1400BE9B09 /* DMBaseElement.m in Sources */,
-				4F9067E6178BED1400BE9B09 /* DMCamera.m in Sources */,
-				4F9067E7178BED1400BE9B09 /* DMFilter.m in Sources */,
 				4F9067E8178BED1400BE9B09 /* DMProcessor.m in Sources */,
-				4F9067E9178BED1400BE9B09 /* DMTextElement.m in Sources */,
-				4F9067EA178BED1400BE9B09 /* DMVideo.m in Sources */,
-				4F9067EB178BED1400BE9B09 /* CameraFrameNode.m in Sources */,
-				4F9067EC178BED1400BE9B09 /* DMCamera+Extra.m in Sources */,
-				4F9067ED178BED1400BE9B09 /* DMVideo+Extra.m in Sources */,
 				4F906827178BED1400BE9B09 /* Semaphore.m in Sources */,
 				4F906828178BED1400BE9B09 /* ZipFileHelper.m in Sources */,
 				4F90682B178BF18A00BE9B09 /* DMBrush.m in Sources */,

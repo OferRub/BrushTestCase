@@ -17,14 +17,4 @@
     IBOutlet    DMCollageView * collageView;
 }
 
--(IBAction)touchedBrowse:(id)sender;
--(IBAction)touchedSave:(id)sender;
--(IBAction)touchedShare:(id)sender;
--(IBAction)touchedFacebook:(id)sender;
--(IBAction)touchedYouTube:(id)sender;
--(IBAction)toucheBackFromShare:(id)sender;
--(IBAction)touchedRecordButton:(id)sender;
--(IBAction)touchedStopButton;
--(IBAction)touchedClosePublish:(id)sender;
--(IBAction)touchedStartButton:(id)sender;
 @end

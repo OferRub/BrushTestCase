@@ -7,7 +7,6 @@
 //
 
 #import "DMCollageView.h"
-#import "DMVideo.h"
 #import "DMBaseElement.h"
 #import "DMBrush.h"
 #import <Dropico/Dropico.h>
@@ -19,8 +18,6 @@
     DMTexture * giant, * background;
     NSMutableArray * currentStroke;
     DMBrushNode * currentErase;
-    DMCamera * dmc;
-    DMVideo       *dmv;
     NSMutableArray * transitionList;
     NSMutableArray * videoList;
     NSMutableArray * time1List, * time2List;
@@ -155,25 +152,7 @@
 
 - (BOOL)update
 {
-    BOOL b = NO;
-    if (isNext<3)
-    {
-        if (!isPost)
-        {
-            isNext += (b = (dmv?[dmv readNext]:[dmc readLast]))?1:0;
-            //            if (dmv)
-            //                [dmv tmpReadNextAudio];
-        }
-    }
-/*    if (isNext<3)
-    {
-        if (!isPost)
-        {
-            isNext += (b = ([dmv readNext])?1:0);
-            //            if (dmv)
-            //                [dmv tmpReadNextAudio];
-        }
-    }*/
+    BOOL b = YES;
     return b;
 }
 
@@ -240,209 +219,12 @@
 {
 }
 
-- (BOOL)processVideoFrame:(DMTexture *)cameraFrame timeStamp:(double)time totalTime:(double) total data:(CameraFrameNode *)data isHalf:(BOOL)isHalf;
-{
-    CGRect rect = CGRectZero;
-    [loadMutex lock];
-/*    if (filterStart>0.0 && filterStart>time)
-    {
-        [processCopy load];
-        
-        CGSize size = processBackground.elementSize;
-        rect.size = size;
-        if (_isHalfRes)
-            rect.size = CGSizeMake (640.0, 360.0);
-        else
-            //            rect.size = CGSizeMake (1920, 1080.0);
-            rect.size = CGSizeMake (1280, 720.0);
-        CGRect sourceSize = CGRectMake(0, 0, rect.size.width, rect.size.height);
-        if (isHalf)
-        {
-            rect.size.width/=2;
-            rect.size.height/=2;
-        }
-        
-        [processCopy coreProcessWithCamera:cameraFrame targetTexture: data->texture targetRect:rect targetMaxRect:rect rotation:0 scaledSize:rect.size depthLevel:0 withCrop: rect sourceRect:sourceSize postBGR: NO isRotate: NO];
-    }
-    else*/
-    {
-        double t = time;
-//        [texture1 clear];
-        if (off)
-        {
-            if (t>=[((NSNumber *)(time2List[index+1])) floatValue])
-            {
-                prevTime1 = [((NSNumber *)(time2List[index+1])) floatValue];
-                index++;
-                off = !off;
-            }
-        }
-        else
-        {
-            if (t>=[((NSNumber *)(time1List[index+1])) floatValue])
-            {
-                index++;
-                off = !off;
-            }
-        }
-
-        if (off2)
-        {
-            if (t>=[((NSNumber *)(time2List[index2+1])) floatValue])
-            {
-                prevTime2 = [((NSNumber *)(time2List[index2+1])) floatValue];
-                index2++;
-                off2 = !off2;
-            }
-        }
-        else
-        {
-            if (t>=[((NSNumber *)(time1List[index2+1])) floatValue])
-            {
-                index2++;
-                off2 = !off2;
-            }
-        }
-        index2 = MIN(movieCount-1, index2);
-        if (index+1>=movieCount)
-        {
-            [loadMutex unlock];
-            return NO;
-        }
-        if ([videoList[index] isKindOfClass:[DMVideo class]])
-            [((DMVideo *)videoList[index]) readNext];
-        if (index!=index2)
-            if ([videoList[index2] isKindOfClass:[DMVideo class]])
-                [((DMVideo *)videoList[index2]) readNext];
-//        double prevTime1 = [((NSNumber *)time1List[index]) floatValue];
-//        double prevTime2 = [((NSNumber *)time2List[index2]) floatValue];
-        double x1 = MAX(MIN((t-prevTime1)/durationList[index]-floor((t-prevTime1)/durationList[index]), 1.0), 0.0);
-        double x2 = MAX(MIN(MAX(t-prevTime2, 0.0)/durationList[index2]-floor(MAX(t-prevTime2, 0.0)/durationList[index2]), 1.0), 0.0);
- /*       if (off || off2)
-        {
-            if (off2)
-                [((DMTransition*)(transitionList[index])) processWithTarget:data->texture andSource:nil andFactor: x1 targetScale:1.0 isHalf:NO];
-            else
-            {
-                [((DMTransition*)(transitionList[index2])) processWithTarget:data->texture andSource:nil andFactor: x2 targetScale:1.0 isHalf:NO];
-            }
-        }
-        else
-        {
-            [((DMTransition*)(transitionList[index])) processWithTarget:texture1 andSource:nil andFactor:x1 targetScale:[((DMTransition*)(transitionList[index2])) getScale:x2] isHalf:NO];
-            [((DMTransition*)(transitionList[index2])) processWithTarget:data->texture andSource:texture1 andFactor: x2 targetScale:1.0 isHalf:NO];
-        }*/
-        NSLog(@"Process video: %f ms", t);
-
-/*        [processBackground load];
-        
-        CGSize size = processBackground.elementSize;
-        rect.size = size;
-        if (_isHalfRes)
-            rect.size = CGSizeMake (640.0, 360.0);
-        else
-            //            rect.size = CGSizeMake (1920, 1080.0);
-            rect.size = CGSizeMake (1280, 720.0);
-        CGRect sourceSize = CGRectMake(0, 0, rect.size.width, rect.size.height);
-        if (isHalf)
-        {
-            rect.size.width/=2;
-            rect.size.height/=2;
-        }
-        
-        double t = time;
-        NSLog(@"Process video: %f ms", t);
-        [processBackground setFloat:DMParameterAlpha value:0.0];
-        [first setFloat:DMParameterAlpha value:0.0];
-        float scale1 = 1.0;
-        float scale2 = 1.0;
-        if (t<15.0)
-            scale1 = 0.5+0.5*(1.0-t/15.0);
-        else
-            scale1 = 0.5;
-        if (t>10.0)
-            scale2 = 1.+0.5*(t-10.0)/5.0;
-        if (t<5.0)
-        {
-            [first setFloat:DMParameterAlpha value:MIN(t/5.0, 1.0)];
-        }
-        else if (t<10.0)
-            [first setFloat:DMParameterAlpha value:1.0];
-        else if (t<20.0)
-        {
-            [first setFloat:DMParameterAlpha value:MAX((15.0-t)/5.0, 0.0)];
-            [processBackground setFloat:DMParameterAlpha value:MIN((t-10.0)/5.0, 1.0)];
-        }
-        else
-            return NO;
-        [first load];
-        [texture1 clear];
-        scale1/=scale2;
-        CGRect scaledRect = CGRectMake(0, 0, rect.size.width*scale1, rect.size.height*scale1);
-        [first coreProcessWithCamera:nil targetTexture: texture1 targetRect:scaledRect targetMaxRect:scaledRect rotation:0 scaledSize:scaledRect.size depthLevel:0 withCrop: rect sourceRect:CGRectMake(0, 0, first.elementSize.width, first.elementSize.height) postBGR: NO isRotate: NO];
-        [processBackground load];
-        
-        [processBackground coreProcessWithCamera:texture1 targetTexture: data->texture targetRect:rect targetMaxRect:rect rotation:0 scaledSize:CGSizeMake(rect.size.width*scale2, rect.size.height*scale2) depthLevel:0 withCrop: rect sourceRect:sourceSize postBGR: NO isRotate: NO];*/
-    }
-    CFTimeInterval currentDuration = CFAbsoluteTimeGetCurrent();
-    //    NSLog(@"Process video: %f ms", (currentDuration-previousTimestamp) * 1000.0);
-    if ((currentDuration-previousTimestamp)>1.0)
-    {
-        currentDuration+=1.0;
-    }
-    previousTimestamp = currentDuration;
-    
-    float progress = time/total;
-    
-//    if ([self.videoDelegate respondsToSelector:@selector(DMVideoViewProgressUpdate:)]){
-//        [self.videoDelegate DMVideoViewProgressUpdate:progress];
-//    }
-    
-    [loadMutex unlock];
-    return YES;
-}
 
 -(void)recordTimeStamp:(double)time delta:(double)delta
 {
     
 }
 
--(void)takePicture
-{
-    isRecord = YES;
-    NSString * moviePathTarget = [NSString stringWithFormat:@"%@movie%d.mov", NSTemporaryDirectory(), movieCount];
-    [self removeFile:[NSURL fileURLWithPath:moviePathTarget]];
-    [dmc takePictureWithCompleteBlock:^(UIImage * image) {
-        NSString * pathTarget = [NSString stringWithFormat:@"%@image%d.png", NSTemporaryDirectory(), movieCount];
-        NSData * binaryImageData = UIImagePNGRepresentation(image);
-        
-        [self removeFile:[NSURL fileURLWithPath:pathTarget]];
-        [binaryImageData writeToFile:pathTarget atomically:YES];
-        movieCount++;
-        isRecord = NO;
-    }];
-}
-
--(void)startRecord
-{
-    if (isRecord) return;
-    [dmc startRecord];
-    isRecord = YES;
-}
-
--(void)stopRecord
-{
-    if (!isRecord) return;
-//    [dmc stopRecordWithProcess: NO isHalf:NO];
-    NSFileManager *fileManager = [NSFileManager defaultManager];
-    NSError *error;
-    NSString * pathSource = [NSString stringWithFormat:@"%@%@", NSTemporaryDirectory(), @"output.mov"];
-    NSString * pathTarget = [NSString stringWithFormat:@"%@movie%d.mov", NSTemporaryDirectory(), movieCount];
-    [self removeFile:[NSURL fileURLWithPath:pathTarget]];
-    [fileManager copyItemAtPath:pathSource toPath:pathTarget error:&error];
-    movieCount++;
-    isRecord = NO;
-}
 
 double gRetinaFactor = 2.0;
 unsigned int lastIndex = 0;

@@ -195,23 +195,7 @@ NSUserDefaults    *userDefaults;
     [_popover presentPopoverFromRect:aRect inView:aView permittedArrowDirections:UIPopoverArrowDirectionLeft animated:NO];
 
 }
-- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
-{
-    NSLog(@"didFinishPickingMediaWithInfo");
-    NSString *mediaType = [info objectForKey: UIImagePickerControllerMediaType];
-    
-    if (CFStringCompare ((__bridge CFStringRef) mediaType, kUTTypeMovie, 0)
-        == kCFCompareEqualTo)
-    {
-        NSString *moviePath = [[info objectForKey:UIImagePickerControllerMediaURL] path];
-//        [self.mainView loadVideoWithPath:moviePath];
-    }
 
-    if(IS_IPAD){
-        [_popover dismissPopoverAnimated:YES];
-}
-
-}
 - (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker
 {
     NSLog(@"imagePickerControllerDidCancel");
