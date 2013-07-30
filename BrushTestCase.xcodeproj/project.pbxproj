@@ -71,7 +71,6 @@
 		4F9067E1178BED1400BE9B09 /* DMBlend+Extra.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F906776178BED1400BE9B09 /* DMBlend+Extra.m */; };
 		4F9067E2178BED1400BE9B09 /* DMTexture+Extra.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F906778178BED1400BE9B09 /* DMTexture+Extra.m */; };
 		4F9067E3178BED1400BE9B09 /* DMGraphics.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F90677B178BED1400BE9B09 /* DMGraphics.m */; };
-		4F9067E5178BED1400BE9B09 /* DMBaseElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F906780178BED1400BE9B09 /* DMBaseElement.m */; };
 		4F9067E8178BED1400BE9B09 /* DMProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F906786178BED1400BE9B09 /* DMProcessor.m */; };
 		4F9067EE178BED1400BE9B09 /* Add.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 4F906794178BED1400BE9B09 /* Add.fsh */; };
 		4F9067EF178BED1400BE9B09 /* Color.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 4F906795178BED1400BE9B09 /* Color.fsh */; };
@@ -208,8 +207,6 @@
 		4F906779178BED1400BE9B09 /* DMGraphics-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DMGraphics-Prefix.pch"; sourceTree = "<group>"; };
 		4F90677A178BED1400BE9B09 /* DMGraphics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMGraphics.h; sourceTree = "<group>"; };
 		4F90677B178BED1400BE9B09 /* DMGraphics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMGraphics.m; sourceTree = "<group>"; };
-		4F90677F178BED1400BE9B09 /* DMBaseElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMBaseElement.h; sourceTree = "<group>"; };
-		4F906780178BED1400BE9B09 /* DMBaseElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMBaseElement.m; sourceTree = "<group>"; };
 		4F906785178BED1400BE9B09 /* DMProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMProcessor.h; sourceTree = "<group>"; };
 		4F906786178BED1400BE9B09 /* DMProcessor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMProcessor.m; sourceTree = "<group>"; };
 		4F906794178BED1400BE9B09 /* Add.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Add.fsh; sourceTree = "<group>"; };
@@ -484,8 +481,6 @@
 			children = (
 				4F906829178BF18A00BE9B09 /* DMBrush.h */,
 				4F90682A178BF18A00BE9B09 /* DMBrush.m */,
-				4F90677F178BED1400BE9B09 /* DMBaseElement.h */,
-				4F906780178BED1400BE9B09 /* DMBaseElement.m */,
 				4F906785178BED1400BE9B09 /* DMProcessor.h */,
 				4F906786178BED1400BE9B09 /* DMProcessor.m */,
 				4F90678B178BED1400BE9B09 /* Extras */,
@@ -712,7 +707,6 @@
 				4F9067E1178BED1400BE9B09 /* DMBlend+Extra.m in Sources */,
 				4F9067E2178BED1400BE9B09 /* DMTexture+Extra.m in Sources */,
 				4F9067E3178BED1400BE9B09 /* DMGraphics.m in Sources */,
-				4F9067E5178BED1400BE9B09 /* DMBaseElement.m in Sources */,
 				4F9067E8178BED1400BE9B09 /* DMProcessor.m in Sources */,
 				4F906827178BED1400BE9B09 /* Semaphore.m in Sources */,
 				4F906828178BED1400BE9B09 /* ZipFileHelper.m in Sources */,

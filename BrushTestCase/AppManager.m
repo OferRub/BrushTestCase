@@ -7,7 +7,6 @@
 //
 
 #import "AppManager.h"
-#import <Dropico/Dropico.h>
 #import <MobileCoreServices/UTCoreTypes.h>
 #import "SplashView.h"
 
@@ -50,46 +49,12 @@ NSUserDefaults    *userDefaults;
 
 - (void)setup
 {
-    [self setupDropicoConnection];
     [self setupDMGraphics];
     [self setupDataManager];
 }
 
-
-
-- (void)setupDropicoConnection
-{
-    //Init connection to dropico service
-    
-  //  [self.splashView setStatus:@"Connecting to Dropico."];
-    
-    
-    if ([[Dropico sharedManager] isReachable]) {
-        //Do loggin
-        [DropicoUser doLoginWithDevice:[UIDevice currentDevice]
-                           deviceToken:nil
-                               success:^(DropicoResponse *logginResponse) {
-                                   
-                               }
-                               failure:^(NSURLRequest *request, DropicoResponse *response, NSError *error) {
-                                   DropicoLogDebug(@"Failed to loggin. Response: %@",response);
-                               }];
-    }else{
-        DropicoLogDebug(@"No internet reachability");
-    }
-}
-
 - (void)setupDataManager
 {
-/*
-    
-    [DataManager sharedManager];
-    [[DataManager sharedManager] buildBrushesList];
-    [self performBlock:^{
-      //  [self.splashView setStatus:@"Building Effects"];
-
-        [[DataManager sharedManager] buildEffectsList];
-    } afterDelay:0.5];*/
  }
 
 

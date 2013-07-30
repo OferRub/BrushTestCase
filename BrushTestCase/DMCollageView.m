@@ -7,7 +7,7 @@
 //
 
 #import "DMCollageView.h"
-#import "DMBaseElement.h"
+#import "DMView.h"
 #import "DMBrush.h"
 #import <Dropico/Dropico.h>
 #import "DMTexture+Extra.h"
@@ -15,15 +15,13 @@
 
 @interface DMCollageView()
 {
-    DMTexture * giant, * background;
-    NSMutableArray * currentStroke;
+    DMTexture * background;
     DMBrushNode * currentErase;
     NSMutableArray * transitionList;
     NSMutableArray * time1List, * time2List;
     double * durationList;
     DMTexture * texture1;
     DMView        * view1;
-    DMBaseElement *processCopy;
 
     double startLength, globalLength;
     double prevTime1, prevTime2;
@@ -189,7 +187,7 @@
 
 
 double gRetinaFactor = 2.0;
-unsigned int lastIndex = 0;
+//unsigned int lastIndex = 0;
 - (void)renderView: (GLKView *)view
 {
     if (view1 == nil)
@@ -201,63 +199,23 @@ unsigned int lastIndex = 0;
     [view1 setView:view viewRect:gRenderRect];
     if (brush==nil)
     {
-        brush = [[DMBrush alloc] init:giant];
+        brush = [[DMBrush alloc] init];
     }
     if (!background)
     {
         background = [[[DMGraphics manager] factory] loadImageWithPath:[[NSBundle mainBundle] pathForResource:@"Valley_Oahu" ofType:@"ppng"]];
         [background load];
+        [brush setBackground:background];
     }
     if (currentErase)
     {
-        currentStroke = [NSMutableArray new];
-        [brush clear: texture1 withBackground:background];
+//        [brush clear: texture1 withBackground:background];
     }
     else
     {
-        if ([currentStroke count]>=5 && [currentStroke count]>lastIndex+1)
-        {
-            if (!texture1)
-                texture1 = [[[DMGraphics manager] factory] createTarget:viewRect.size.width*gRetinaFactor/2.0 height:viewRect.size.height*gRetinaFactor/2.0];
-            
-            NSMutableArray * trimmed = [NSMutableArray array];
-            unsigned int startIndex = lastIndex;
-            for (unsigned int i=MAX(lastIndex, 2)-2; i<[currentStroke count]; i++)
-            {
-                [trimmed addObject:currentStroke[i]];
-                lastIndex = i;
-            }
-            [DMBrush applyScale:currentStroke atStart:startIndex andLast:lastIndex];
-            if (isTouchEnd)
-            {
-                for (unsigned int i=lastIndex; i<[currentStroke count]; i++)
-                {
-                    [trimmed addObject:currentStroke[i]];
-                    ((DMBrushNode *)currentStroke[i])->scale = ((DMBrushNode *)currentStroke[lastIndex-1])->scale;
-                }
-                currentStroke = nil;
-                touchAmount = 0;
-                touchDelta = 0.0;
-                touchAverage = CGPointZero;
-                touchIndex = 0;
-                scaleAmount = 0;
-                scaleIndex = 0;
-                for (unsigned int i=0; i<maxScale; i++)
-                    scaleArray[i] = 0.0f;
-                for (unsigned int i=0; i<maxTouch; i++)
-                    touchArray[i] = CGPointZero;
-                
-            }
-            DMBrushNode * lastPoint = [brush drawPointList:trimmed withSize:CGSizeMake(46, 46) intoTarget:texture1 withBackground:background startLength:startLength+globalLength];
-            if (lastPoint)
-                startLength = [brush getLastLength]-globalLength;
-            if (isTouchEnd && lastPoint)
-            {
-                globalLength += startLength;
-                [brush drawCircleAt:lastPoint withSize:CGSizeMake(46, 46) intoTarget:texture1];
-                startLength = 0;
-            }
-        }
+        if (!texture1)
+            texture1 = [[[DMGraphics manager] factory] createTarget:viewRect.size.width*gRetinaFactor/2.0 height:viewRect.size.height*gRetinaFactor/2.0];
+        [brush renderBrushForTarget:texture1];
     }
     if (texture1)
         [view1 presentTexture:texture1 withView:view andRect:gRenderRect];
@@ -270,10 +228,6 @@ unsigned int scaleAmount = 0, maxScale = 5, scaleIndex = 0;
 double lastTouch = 0.0;
 double touchDelta = 0.0;
 unsigned int maxTouch = 5;
-unsigned int touchIndex = 0;
-CGPoint touchArray[5];
-CGPoint touchAverage = {0.f, 0.f};
-unsigned int touchAmount = 0;
 BOOL isTouchEnd = NO;
 - (void) touchesBegan:(NSSet*)touches withEvent:(UIEvent*)event
 {
@@ -281,22 +235,15 @@ BOOL isTouchEnd = NO;
         currentErase = nil;
     if (currentErase)
         return;
-    lastIndex = 0;
     isTouchEnd = NO;
-    touchAmount = 0;
     touchDelta = 0.0;
     lastTouch = event.timestamp;
-    touchAverage = CGPointZero;
-    touchIndex = 0;
     scaleAmount = 0;
     scaleIndex = 0;
     for (unsigned int i=0; i<maxScale; i++)
         scaleArray[i] = 0.0f;
-    for (unsigned int i=0; i<maxTouch; i++)
-        touchArray[i] = CGPointZero;
     if ([touches count]>1)
     {
-        currentStroke = nil;
         int i = 0;
         CGPoint point = CGPointZero;
         for (UITouch *touch in touches) {
@@ -311,20 +258,11 @@ BOOL isTouchEnd = NO;
         currentErase = n;
         return;
     }
-    currentStroke = [NSMutableArray array];
     CGPoint point = [ [touches anyObject] locationInView:self];
     point.x*=gRetinaFactor;
     point.y*=gRetinaFactor;
-    DMBrushNode * n = [DMBrushNode new];
-    n->position = point;
-    touchArray[touchIndex] = point;
-    touchIndex++;
-    touchIndex%=maxTouch;
-    touchAverage = point;
-//    n->time = event.timestamp;
-    n->delta = 1.0/60.0;
-    n->weightFactor = 2.0;
-    [currentStroke addObject:n];
+
+    [brush drawStroke:(DMBrushStrokeData){point, 1.0/60.0}];
 }
 
 - (void) touchesMoved:(NSSet*)touches withEvent:(UIEvent*)event
@@ -337,14 +275,8 @@ BOOL isTouchEnd = NO;
         scaleIndex = 0;
         for (unsigned int i=0; i<maxScale; i++)
             scaleArray[i] = 0.0f;
-        touchAmount = 0;
         touchDelta = 0.0;
-        touchAverage = CGPointZero;
         lastTouch = event.timestamp;
-        currentStroke = nil;
-        touchIndex = 0;
-        for (unsigned int i=0; i<maxTouch; i++)
-            touchArray[i] = CGPointZero;
         int i = 0;
         CGPoint point = CGPointZero;
         for (UITouch *touch in touches) {
@@ -359,32 +291,12 @@ BOOL isTouchEnd = NO;
         currentErase = n;
         return;
     }
-    if (!currentStroke)
-        currentStroke = [NSMutableArray array];
     CGPoint point = [ [touches anyObject] locationInView:self];
     point.x*=gRetinaFactor;
     point.y*=gRetinaFactor;
-    DMBrushNode * n = [DMBrushNode new];
     double delta = event.timestamp-lastTouch;
-    touchDelta = (touchDelta*(double)MIN(touchAmount, 5)+delta)/(double)(MIN(touchAmount, 5)+1);
-    touchArray[touchIndex] = point;
-    touchAmount++;
-    touchIndex++;
-    touchIndex%=maxTouch;
-    touchAverage = CGPointZero;
-    for (unsigned int i=0; i<MIN(touchAmount+1, maxTouch); i++)
-    {
-        touchAverage.x+=touchArray[i].x;
-        touchAverage.y+=touchArray[i].y;
-    }
-    touchAverage.x/=(double)MIN(touchAmount+1, maxTouch);
-    touchAverage.y/=(double)MIN(touchAmount+1, maxTouch);
-    n->position = touchAverage;
     lastTouch = event.timestamp;
-//    n->time = event.timestamp;
-    n->delta = touchDelta;
-    n->weightFactor = 1.0;
-    [currentStroke addObject:n];
+    [brush drawStroke:(DMBrushStrokeData){point, delta}];
 }
 
 
@@ -398,14 +310,8 @@ BOOL isTouchEnd = NO;
         scaleIndex = 0;
         for (unsigned int i=0; i<maxScale; i++)
             scaleArray[i] = 0.0f;
-        touchAmount = 0;
         touchDelta = 0.0;
-        touchAverage = CGPointZero;
         lastTouch = event.timestamp;
-        currentStroke = nil;
-        touchIndex = 0;
-        for (unsigned int i=0; i<maxTouch; i++)
-            touchArray[i] = CGPointZero;
         int i = 0;
         CGPoint point = CGPointZero;
         for (UITouch *touch in touches) {
@@ -420,36 +326,13 @@ BOOL isTouchEnd = NO;
         currentErase = n;
         return;
     }
-    if (!currentStroke)
-        currentStroke = [NSMutableArray array];
     CGPoint point = [ [touches anyObject] locationInView:self];
     point.x*=gRetinaFactor;
     point.y*=gRetinaFactor;
     double delta = event.timestamp-lastTouch;
-    touchDelta = (touchDelta*(double)MIN(touchAmount, 5)+delta)/(double)(MIN(touchAmount, 5)+1);
-    isTouchEnd = YES;
-    for (unsigned int k=0; k<5; k++)
-    {
-        DMBrushNode * n = [DMBrushNode new];
-        touchArray[touchIndex] = point;
-        touchAmount++;
-        touchIndex++;
-        touchIndex%=maxTouch;
-        touchAverage = CGPointZero;
-        for (unsigned int i=0; i<MIN(touchAmount+1, maxTouch); i++)
-        {
-            touchAverage.x+=touchArray[i].x;
-            touchAverage.y+=touchArray[i].y;
-        }
-        touchAverage.x/=(double)MIN(touchAmount+1, maxTouch);
-        touchAverage.y/=(double)MIN(touchAmount+1, maxTouch);
-        n->weightFactor = 2.;
-        n->position = touchAverage;
-        lastTouch = event.timestamp;
-        //    n->time = event.timestamp;
-        n->delta = touchDelta;
-        [currentStroke addObject:n];
-    }
+    lastTouch = event.timestamp;
+    [brush drawStroke:(DMBrushStrokeData){point, delta}];
+    [brush endDrawing];
 }
 
 - (void)glkView:(GLKView *)view drawInRect:(CGRect)rect
