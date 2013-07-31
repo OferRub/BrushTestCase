@@ -73,11 +73,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "../GFXLab/DMGraphicsLean/DMGraphics/Interface/DMBrush.m"
-         timestampString = "396951769.995984"
+         timestampString = "396953483.754777"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "461"
-         endingLineNumber = "461"
+         startingLineNumber = "459"
+         endingLineNumber = "459"
          landmarkName = "-drawPointList:withSize:intoTarget:withBackground:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -125,11 +125,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "../GFXLab/DMGraphicsLean/DMGraphics/Interface/DMBrush.m"
-         timestampString = "396951769.995984"
+         timestampString = "396953483.754777"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "205"
-         endingLineNumber = "205"
+         startingLineNumber = "203"
+         endingLineNumber = "203"
          landmarkName = "-smoothCurveSample:maxDelta:lastNode:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -138,11 +138,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "../GFXLab/DMGraphicsLean/DMGraphics/Interface/DMBrush.m"
-         timestampString = "396951769.995984"
+         timestampString = "396953483.754777"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "349"
-         endingLineNumber = "349"
+         startingLineNumber = "347"
+         endingLineNumber = "347"
          landmarkName = "-smoothCurveSample:maxDelta:lastNode:"
          landmarkType = "5">
       </FileBreakpoint>

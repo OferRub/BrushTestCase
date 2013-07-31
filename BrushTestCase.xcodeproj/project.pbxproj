@@ -56,7 +56,7 @@
 		4F90674B1789901200BE9B09 /* SplashView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F9067481789900600BE9B09 /* SplashView.m */; };
 		4F90674C1789905D00BE9B09 /* SplashView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F9067491789900600BE9B09 /* SplashView.xib */; };
 		4F90674D1789905D00BE9B09 /* SplashView~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F90674A1789900600BE9B09 /* SplashView~ipad.xib */; };
-		4F90674E1789994300BE9B09 /* DMCollageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F90674517898EDA00BE9B09 /* DMCollageView.m */; };
+		4F90674E1789994300BE9B09 /* DMBrushView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F90674517898EDA00BE9B09 /* DMBrushView.m */; };
 		4F906750178AB44000BE9B09 /* giant.pvr in Resources */ = {isa = PBXBuildFile; fileRef = 4F90674F178AB42400BE9B09 /* giant.pvr */; };
 		4F9067D4178BED1400BE9B09 /* DMBlend.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F906758178BED1400BE9B09 /* DMBlend.m */; };
 		4F9067D5178BED1400BE9B09 /* DMContextLock.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F90675A178BED1400BE9B09 /* DMContextLock.m */; };
@@ -173,8 +173,8 @@
 		4F90672417898EB700BE9B09 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		4F90672517898EB700BE9B09 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4F90672617898EB700BE9B09 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		4F90674417898EDA00BE9B09 /* DMCollageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DMCollageView.h; sourceTree = "<group>"; };
-		4F90674517898EDA00BE9B09 /* DMCollageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DMCollageView.m; sourceTree = "<group>"; };
+		4F90674417898EDA00BE9B09 /* DMBrushView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DMBrushView.h; sourceTree = "<group>"; };
+		4F90674517898EDA00BE9B09 /* DMBrushView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DMBrushView.m; sourceTree = "<group>"; };
 		4F9067471789900600BE9B09 /* SplashView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SplashView.h; sourceTree = "<group>"; };
 		4F9067481789900600BE9B09 /* SplashView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SplashView.m; sourceTree = "<group>"; };
 		4F9067491789900600BE9B09 /* SplashView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SplashView.xib; sourceTree = "<group>"; };
@@ -361,8 +361,8 @@
 				4F9067481789900600BE9B09 /* SplashView.m */,
 				4F9067491789900600BE9B09 /* SplashView.xib */,
 				4F90674A1789900600BE9B09 /* SplashView~ipad.xib */,
-				4F90674417898EDA00BE9B09 /* DMCollageView.h */,
-				4F90674517898EDA00BE9B09 /* DMCollageView.m */,
+				4F90674417898EDA00BE9B09 /* DMBrushView.h */,
+				4F90674517898EDA00BE9B09 /* DMBrushView.m */,
 				4F90663217898DB600BE9B09 /* AppManager.h */,
 				4F90663317898DB600BE9B09 /* AppManager.m */,
 				4F90661B17898D3E00BE9B09 /* AppDelegate.h */,
@@ -684,7 +684,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4F90674E1789994300BE9B09 /* DMCollageView.m in Sources */,
+				4F90674E1789994300BE9B09 /* DMBrushView.m in Sources */,
 				4F90674B1789901200BE9B09 /* SplashView.m in Sources */,
 				4F90674617898FE400BE9B09 /* AppManager.m in Sources */,
 				4F90661917898D3E00BE9B09 /* main.m in Sources */,

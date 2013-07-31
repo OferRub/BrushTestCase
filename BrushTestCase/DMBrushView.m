@@ -6,16 +6,15 @@
 //  Copyright (c) 2013 Dropico Media LTD. All rights reserved.
 //
 
-#import "DMCollageView.h"
+#import "DMBrushView.h"
 #import "DMView.h"
 #import "DMBrush.h"
 #import <Dropico/Dropico.h>
 #import "DMTexture+Extra.h"
 
 
-@interface DMCollageView()
+@interface DMBrushView()
 {
-    DMTexture * background;
     DMBrushNode * currentErase;
     DMTexture * texture1;
     DMView        * view1;
@@ -31,7 +30,7 @@
 
 @end
 
-@implementation DMCollageView
+@implementation DMBrushView
 
 - (void)setup
 {
@@ -48,8 +47,33 @@
     self.context = [[DMGraphics manager] factory]->context;
     
     gRenderRect = CGRectMake(0, 0, self.frame.size.width, self.frame.size.height);
+
+    brush = [[DMBrush alloc] init];
+    [brush setColor:DMMakeColor(1.0, 1.0, 0.5)];
 }
 
+
+- (void)loadBrushWithType:(DMBrushType)type
+{
+    brush = [[DMBrush alloc] init];
+}
+
+- (void)setSize:(double)size
+{
+    [brush setSize:CGSizeMake(size, size)];
+}
+
+- (DMBrush *)getBrush
+{
+    return brush;
+}
+
+- (void) setBackground:(DMTexture *)background
+{
+    background = [[[DMGraphics manager] factory] loadImageWithPath:[[NSBundle mainBundle] pathForResource:@"Valley_Oahu" ofType:@"ppng"]];
+    [background load];
+    [brush setBackground:background];
+}
 #pragma mark - inner functions
 -(void) doFrame:(id)data
 {
@@ -125,17 +149,6 @@ double gRetinaFactor = 2.0;
 
     gRenderRect = viewRect;
     [view1 setView:view viewRect:gRenderRect];
-    if (brush==nil)
-    {
-        brush = [[DMBrush alloc] init];
-        [brush setColor:DMMakeColor(1.0, 1.0, 0.5)];
-    }
-    if (!background)
-    {
-        background = [[[DMGraphics manager] factory] loadImageWithPath:[[NSBundle mainBundle] pathForResource:@"Valley_Oahu" ofType:@"ppng"]];
-        [background load];
-        [brush setBackground:background];
-    }
     if (currentErase)
     {
 //        [brush clear: texture1 withBackground:background];

@@ -7,14 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "DMCollageView.h"
+#import "DMBrushView.h"
 //#import "EasyTableView.h"
 
 #define RGBA(R,G,B,A)   [UIColor colorWithRed:(float) R/255 green:(float) G/255 blue:(float) B/255 alpha: A]
 
 @interface ViewController : UIViewController <UIScrollViewDelegate, UIImagePickerControllerDelegate,UINavigationControllerDelegate>
 {
-    IBOutlet    DMCollageView * collageView;
+    IBOutlet    DMBrushView * collageView;
 }
 
 @end
