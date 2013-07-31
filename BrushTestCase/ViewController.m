@@ -159,11 +159,8 @@ typedef enum {
     isRecord = NO;
     didRecordVideo  = NO;
     selectedFilter  = 0;
-    //    filtersArray = [[DataManager sharedManager] getEffects];
     saveOption = VideoSaveOptionGallery;
     [self setState:VideoControllerStateNone];
-    //Setup VideoView
-    [collageView setDisplay:YES];
 }
 - (void)viewDidLoad
 {

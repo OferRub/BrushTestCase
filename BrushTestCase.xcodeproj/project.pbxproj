@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4F4C8A1917A7FC76003B0B2D /* DMBrushMarker.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F4C8A1817A7FC76003B0B2D /* DMBrushMarker.m */; };
 		4F853B141794024900FBEB06 /* Paper.pvr in Resources */ = {isa = PBXBuildFile; fileRef = 4F853B13179401D500FBEB06 /* Paper.pvr */; };
 		4F853B16179555F100FBEB06 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F853B15179555F100FBEB06 /* ViewController.xib */; };
 		4F8862AE178D5D4000D8A367 /* Photo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4F8862AD178D5D3F00D8A367 /* Photo.jpg */; };
@@ -119,6 +120,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4F4C8A1717A7FC76003B0B2D /* DMBrushMarker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMBrushMarker.h; sourceTree = "<group>"; };
+		4F4C8A1817A7FC76003B0B2D /* DMBrushMarker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMBrushMarker.m; sourceTree = "<group>"; };
 		4F853B13179401D500FBEB06 /* Paper.pvr */ = {isa = PBXFileReference; lastKnownFileType = file; path = Paper.pvr; sourceTree = "<group>"; };
 		4F853B15179555F100FBEB06 /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
 		4F8862AD178D5D3F00D8A367 /* Photo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Photo.jpg; sourceTree = "<group>"; };
@@ -483,16 +486,10 @@
 				4F90682A178BF18A00BE9B09 /* DMBrush.m */,
 				4F906785178BED1400BE9B09 /* DMProcessor.h */,
 				4F906786178BED1400BE9B09 /* DMProcessor.m */,
-				4F90678B178BED1400BE9B09 /* Extras */,
+				4F4C8A1717A7FC76003B0B2D /* DMBrushMarker.h */,
+				4F4C8A1817A7FC76003B0B2D /* DMBrushMarker.m */,
 			);
 			path = Interface;
-			sourceTree = "<group>";
-		};
-		4F90678B178BED1400BE9B09 /* Extras */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Extras;
 			sourceTree = "<group>";
 		};
 		4F906792178BED1400BE9B09 /* Shaders */ = {
@@ -711,6 +708,7 @@
 				4F906827178BED1400BE9B09 /* Semaphore.m in Sources */,
 				4F906828178BED1400BE9B09 /* ZipFileHelper.m in Sources */,
 				4F90682B178BF18A00BE9B09 /* DMBrush.m in Sources */,
+				4F4C8A1917A7FC76003B0B2D /* DMBrushMarker.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

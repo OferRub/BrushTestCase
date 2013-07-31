@@ -10,6 +10,4 @@
 
 @interface DMCollageView : GLKView<GLKViewDelegate, DMGraphicsDelegate>
 
-- (void)setDisplay:(BOOL)enable;
-
 @end
