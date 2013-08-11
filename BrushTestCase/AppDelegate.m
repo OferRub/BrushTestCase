@@ -23,11 +23,15 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    [Dropico initDropicoWithApp:@"VideoApp"];
+  
     [[UIApplication sharedApplication] setStatusBarHidden: YES withAnimation:UIStatusBarAnimationNone];
     [self setWindow:[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]]];
     [[UIApplication sharedApplication] setStatusBarHidden:YES];
-    [self.window setRootViewController:[[AppManager sharedAppManager] runApplication]];
+    
+    
+    self.viewController = [[ViewController alloc] init];
+    
+    [self.window setRootViewController:self.viewController];
     [self.window makeKeyAndVisible];
     
     return YES;

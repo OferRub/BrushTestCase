@@ -7,9 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4F4C8A1917A7FC76003B0B2D /* DMBrushMarker.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F4C8A1817A7FC76003B0B2D /* DMBrushMarker.m */; };
 		4F853B141794024900FBEB06 /* Paper.pvr in Resources */ = {isa = PBXBuildFile; fileRef = 4F853B13179401D500FBEB06 /* Paper.pvr */; };
-		4F853B16179555F100FBEB06 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F853B15179555F100FBEB06 /* ViewController.xib */; };
 		4F8862AE178D5D4000D8A367 /* Photo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4F8862AD178D5D3F00D8A367 /* Photo.jpg */; };
 		4F8862B2178D94BA00D8A367 /* Blue.ppng in Resources */ = {isa = PBXBuildFile; fileRef = 4F8862B1178D94BA00D8A367 /* Blue.ppng */; };
 		4F8862B4178EB04200D8A367 /* Paper.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4F8862B3178EB04200D8A367 /* Paper.jpg */; };
@@ -24,8 +22,7 @@
 		4F90661F17898D3E00BE9B09 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F90661E17898D3E00BE9B09 /* Default.png */; };
 		4F90662117898D3E00BE9B09 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F90662017898D3E00BE9B09 /* Default@2x.png */; };
 		4F90662317898D3E00BE9B09 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F90662217898D3E00BE9B09 /* Default-568h@2x.png */; };
-		4F90662617898D3E00BE9B09 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F90662517898D3E00BE9B09 /* ViewController.m */; };
-		4F90662C17898D3E00BE9B09 /* ViewController~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F90662A17898D3E00BE9B09 /* ViewController~ipad.xib */; };
+		4F90662C17898D3E00BE9B09 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F90662A17898D3E00BE9B09 /* ViewController.xib */; };
 		4F90672717898EB700BE9B09 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F90670A17898EB700BE9B09 /* libsqlite3.dylib */; };
 		4F90672817898EB700BE9B09 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F90670B17898EB700BE9B09 /* StoreKit.framework */; };
 		4F90672917898EB700BE9B09 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F90670C17898EB700BE9B09 /* Security.framework */; };
@@ -52,10 +49,6 @@
 		4F90674117898EB700BE9B09 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F90672417898EB700BE9B09 /* UIKit.framework */; };
 		4F90674217898EB700BE9B09 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F90672517898EB700BE9B09 /* Foundation.framework */; };
 		4F90674317898EB700BE9B09 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F90672617898EB700BE9B09 /* CoreGraphics.framework */; };
-		4F90674617898FE400BE9B09 /* AppManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F90663317898DB600BE9B09 /* AppManager.m */; };
-		4F90674B1789901200BE9B09 /* SplashView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F9067481789900600BE9B09 /* SplashView.m */; };
-		4F90674C1789905D00BE9B09 /* SplashView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F9067491789900600BE9B09 /* SplashView.xib */; };
-		4F90674D1789905D00BE9B09 /* SplashView~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F90674A1789900600BE9B09 /* SplashView~ipad.xib */; };
 		4F90674E1789994300BE9B09 /* DMBrushView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F90674517898EDA00BE9B09 /* DMBrushView.m */; };
 		4F906750178AB44000BE9B09 /* giant.pvr in Resources */ = {isa = PBXBuildFile; fileRef = 4F90674F178AB42400BE9B09 /* giant.pvr */; };
 		4F9067D4178BED1400BE9B09 /* DMBlend.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F906758178BED1400BE9B09 /* DMBlend.m */; };
@@ -117,13 +110,18 @@
 		4FC33C8917A5169A00C1F47B /* AddDisk.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 4FC33C8817A5169A00C1F47B /* AddDisk.fsh */; };
 		4FC33C8B17A5488300C1F47B /* Valley_Oahu.pvr in Resources */ = {isa = PBXBuildFile; fileRef = 4FC33C8A17A5485000C1F47B /* Valley_Oahu.pvr */; };
 		4FC33C8D17A5491000C1F47B /* Valley_Oahu.ppng in Resources */ = {isa = PBXBuildFile; fileRef = 4FC33C8C17A5491000C1F47B /* Valley_Oahu.ppng */; };
+		4FDF27AE17A944300062BFDF /* RibbonShader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 4FDF27AD17A944300062BFDF /* RibbonShader.vsh */; };
+		4FDF27B017A9483D0062BFDF /* Marker.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 4FDF27AF17A9483D0062BFDF /* Marker.fsh */; };
+		4FDF27B217AA894E0062BFDF /* MarkerDisc.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 4FDF27B117AA894E0062BFDF /* MarkerDisc.fsh */; };
+		4FDF27B417AA9AEA0062BFDF /* DepthWrite.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 4FDF27B317AA9AEA0062BFDF /* DepthWrite.fsh */; };
+		4FDF27B717AFD99C0062BFDF /* DMBrushTouche.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FDF27B617AFD99C0062BFDF /* DMBrushTouche.m */; };
+		4FDF27BA17AFE9B50062BFDF /* DMBrushSpray.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FDF27B917AFE9B50062BFDF /* DMBrushSpray.m */; };
+		4FDF27BC17B0F3140062BFDF /* Spray.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 4FDF27BB17B0F3140062BFDF /* Spray.fsh */; };
+		4FDF27BF17B113000062BFDF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FDF27BE17B112FF0062BFDF /* ViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4F4C8A1717A7FC76003B0B2D /* DMBrushMarker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMBrushMarker.h; sourceTree = "<group>"; };
-		4F4C8A1817A7FC76003B0B2D /* DMBrushMarker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMBrushMarker.m; sourceTree = "<group>"; };
 		4F853B13179401D500FBEB06 /* Paper.pvr */ = {isa = PBXFileReference; lastKnownFileType = file; path = Paper.pvr; sourceTree = "<group>"; };
-		4F853B15179555F100FBEB06 /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
 		4F8862AD178D5D3F00D8A367 /* Photo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Photo.jpg; sourceTree = "<group>"; };
 		4F8862B1178D94BA00D8A367 /* Blue.ppng */ = {isa = PBXFileReference; lastKnownFileType = file; path = Blue.ppng; sourceTree = "<group>"; };
 		4F8862B3178EB04200D8A367 /* Paper.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Paper.jpg; sourceTree = "<group>"; };
@@ -142,11 +140,7 @@
 		4F90661E17898D3E00BE9B09 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		4F90662017898D3E00BE9B09 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		4F90662217898D3E00BE9B09 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		4F90662417898D3E00BE9B09 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		4F90662517898D3E00BE9B09 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		4F90662B17898D3E00BE9B09 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = "en.lproj/ViewController~ipad.xib"; sourceTree = "<group>"; };
-		4F90663217898DB600BE9B09 /* AppManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppManager.h; sourceTree = "<group>"; };
-		4F90663317898DB600BE9B09 /* AppManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppManager.m; sourceTree = "<group>"; };
+		4F90662B17898D3E00BE9B09 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
 		4F90670A17898EB700BE9B09 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		4F90670B17898EB700BE9B09 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		4F90670C17898EB700BE9B09 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
@@ -175,10 +169,6 @@
 		4F90672617898EB700BE9B09 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		4F90674417898EDA00BE9B09 /* DMBrushView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DMBrushView.h; sourceTree = "<group>"; };
 		4F90674517898EDA00BE9B09 /* DMBrushView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DMBrushView.m; sourceTree = "<group>"; };
-		4F9067471789900600BE9B09 /* SplashView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SplashView.h; sourceTree = "<group>"; };
-		4F9067481789900600BE9B09 /* SplashView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SplashView.m; sourceTree = "<group>"; };
-		4F9067491789900600BE9B09 /* SplashView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SplashView.xib; sourceTree = "<group>"; };
-		4F90674A1789900600BE9B09 /* SplashView~ipad.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = "SplashView~ipad.xib"; sourceTree = "<group>"; };
 		4F90674F178AB42400BE9B09 /* giant.pvr */ = {isa = PBXFileReference; lastKnownFileType = file; path = giant.pvr; sourceTree = "<group>"; };
 		4F906757178BED1400BE9B09 /* DMBlend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMBlend.h; sourceTree = "<group>"; };
 		4F906758178BED1400BE9B09 /* DMBlend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMBlend.m; sourceTree = "<group>"; };
@@ -212,7 +202,7 @@
 		4F90677B178BED1400BE9B09 /* DMGraphics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMGraphics.m; sourceTree = "<group>"; };
 		4F906785178BED1400BE9B09 /* DMProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMProcessor.h; sourceTree = "<group>"; };
 		4F906786178BED1400BE9B09 /* DMProcessor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMProcessor.m; sourceTree = "<group>"; };
-		4F906794178BED1400BE9B09 /* Add.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Add.fsh; sourceTree = "<group>"; };
+		4F906794178BED1400BE9B09 /* Add.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Add.fsh; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.glsl; };
 		4F906795178BED1400BE9B09 /* Color.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Color.fsh; sourceTree = "<group>"; };
 		4F906796178BED1400BE9B09 /* ColorBalance.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = ColorBalance.fsh; sourceTree = "<group>"; };
 		4F906797178BED1400BE9B09 /* ColorBurn.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = ColorBurn.fsh; sourceTree = "<group>"; };
@@ -229,10 +219,10 @@
 		4F9067A2178BED1400BE9B09 /* Multiply.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Multiply.fsh; sourceTree = "<group>"; };
 		4F9067A3178BED1400BE9B09 /* Normal.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Normal.fsh; sourceTree = "<group>"; };
 		4F9067A4178BED1400BE9B09 /* NormalColor.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = NormalColor.fsh; sourceTree = "<group>"; };
-		4F9067A5178BED1400BE9B09 /* Overlay.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Overlay.fsh; sourceTree = "<group>"; };
+		4F9067A5178BED1400BE9B09 /* Overlay.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Overlay.fsh; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.glsl; };
 		4F9067A6178BED1400BE9B09 /* PMANormal.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = PMANormal.fsh; sourceTree = "<group>"; };
 		4F9067BA178BED1400BE9B09 /* Saturation.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Saturation.fsh; sourceTree = "<group>"; };
-		4F9067BB178BED1400BE9B09 /* Screen.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Screen.fsh; sourceTree = "<group>"; };
+		4F9067BB178BED1400BE9B09 /* Screen.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Screen.fsh; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.glsl; };
 		4F9067BC178BED1400BE9B09 /* Set.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Set.fsh; sourceTree = "<group>"; };
 		4F9067BD178BED1400BE9B09 /* Sharpen.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Sharpen.fsh; sourceTree = "<group>"; };
 		4F9067BE178BED1400BE9B09 /* Softlight.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Softlight.fsh; sourceTree = "<group>"; };
@@ -259,6 +249,17 @@
 		4FC33C8817A5169A00C1F47B /* AddDisk.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = AddDisk.fsh; sourceTree = "<group>"; };
 		4FC33C8A17A5485000C1F47B /* Valley_Oahu.pvr */ = {isa = PBXFileReference; lastKnownFileType = file; path = Valley_Oahu.pvr; sourceTree = "<group>"; };
 		4FC33C8C17A5491000C1F47B /* Valley_Oahu.ppng */ = {isa = PBXFileReference; lastKnownFileType = file; path = Valley_Oahu.ppng; sourceTree = "<group>"; };
+		4FDF27AD17A944300062BFDF /* RibbonShader.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = RibbonShader.vsh; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.glsl; };
+		4FDF27AF17A9483D0062BFDF /* Marker.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Marker.fsh; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.glsl; };
+		4FDF27B117AA894E0062BFDF /* MarkerDisc.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = MarkerDisc.fsh; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.glsl; };
+		4FDF27B317AA9AEA0062BFDF /* DepthWrite.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = DepthWrite.fsh; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.glsl; };
+		4FDF27B517AFD99C0062BFDF /* DMBrushTouche.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMBrushTouche.h; sourceTree = "<group>"; };
+		4FDF27B617AFD99C0062BFDF /* DMBrushTouche.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMBrushTouche.m; sourceTree = "<group>"; };
+		4FDF27B817AFE9B50062BFDF /* DMBrushSpray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMBrushSpray.h; sourceTree = "<group>"; };
+		4FDF27B917AFE9B50062BFDF /* DMBrushSpray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMBrushSpray.m; sourceTree = "<group>"; };
+		4FDF27BB17B0F3140062BFDF /* Spray.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Spray.fsh; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.glsl; };
+		4FDF27BD17B112FF0062BFDF /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		4FDF27BE17B112FF0062BFDF /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -357,21 +358,14 @@
 			isa = PBXGroup;
 			children = (
 				4F906752178BED1400BE9B09 /* DMGraphicsLean */,
-				4F9067471789900600BE9B09 /* SplashView.h */,
-				4F9067481789900600BE9B09 /* SplashView.m */,
-				4F9067491789900600BE9B09 /* SplashView.xib */,
-				4F90674A1789900600BE9B09 /* SplashView~ipad.xib */,
 				4F90674417898EDA00BE9B09 /* DMBrushView.h */,
 				4F90674517898EDA00BE9B09 /* DMBrushView.m */,
-				4F90663217898DB600BE9B09 /* AppManager.h */,
-				4F90663317898DB600BE9B09 /* AppManager.m */,
 				4F90661B17898D3E00BE9B09 /* AppDelegate.h */,
 				4F90661C17898D3E00BE9B09 /* AppDelegate.m */,
-				4F90662417898D3E00BE9B09 /* ViewController.h */,
-				4F90662517898D3E00BE9B09 /* ViewController.m */,
-				4F90662A17898D3E00BE9B09 /* ViewController~ipad.xib */,
 				4F90661317898D3E00BE9B09 /* Supporting Files */,
-				4F853B15179555F100FBEB06 /* ViewController.xib */,
+				4F90662A17898D3E00BE9B09 /* ViewController.xib */,
+				4FDF27BD17B112FF0062BFDF /* ViewController.h */,
+				4FDF27BE17B112FF0062BFDF /* ViewController.m */,
 			);
 			path = BrushTestCase;
 			sourceTree = "<group>";
@@ -486,8 +480,10 @@
 				4F90682A178BF18A00BE9B09 /* DMBrush.m */,
 				4F906785178BED1400BE9B09 /* DMProcessor.h */,
 				4F906786178BED1400BE9B09 /* DMProcessor.m */,
-				4F4C8A1717A7FC76003B0B2D /* DMBrushMarker.h */,
-				4F4C8A1817A7FC76003B0B2D /* DMBrushMarker.m */,
+				4FDF27B517AFD99C0062BFDF /* DMBrushTouche.h */,
+				4FDF27B617AFD99C0062BFDF /* DMBrushTouche.m */,
+				4FDF27B817AFE9B50062BFDF /* DMBrushSpray.h */,
+				4FDF27B917AFE9B50062BFDF /* DMBrushSpray.m */,
 			);
 			path = Interface;
 			sourceTree = "<group>";
@@ -510,6 +506,11 @@
 				4F9067CB178BED1400BE9B09 /* SourceQuadShader.vsh */,
 				4F9067CC178BED1400BE9B09 /* SwitchRGB.fsh */,
 				4F8862B7178EDDBB00D8A367 /* Ink.fsh */,
+				4FDF27AD17A944300062BFDF /* RibbonShader.vsh */,
+				4FDF27AF17A9483D0062BFDF /* Marker.fsh */,
+				4FDF27B117AA894E0062BFDF /* MarkerDisc.fsh */,
+				4FDF27B317AA9AEA0062BFDF /* DepthWrite.fsh */,
+				4FDF27BB17B0F3140062BFDF /* Spray.fsh */,
 			);
 			path = Shaders;
 			sourceTree = "<group>";
@@ -617,6 +618,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4FDF27B417AA9AEA0062BFDF /* DepthWrite.fsh in Resources */,
+				4FDF27BC17B0F3140062BFDF /* Spray.fsh in Resources */,
+				4FDF27B217AA894E0062BFDF /* MarkerDisc.fsh in Resources */,
+				4FDF27B017A9483D0062BFDF /* Marker.fsh in Resources */,
+				4FDF27AE17A944300062BFDF /* RibbonShader.vsh in Resources */,
 				4FC33C8B17A5488300C1F47B /* Valley_Oahu.pvr in Resources */,
 				4FC33C8917A5169A00C1F47B /* AddDisk.fsh in Resources */,
 				4F853B141794024900FBEB06 /* Paper.pvr in Resources */,
@@ -660,19 +666,16 @@
 				4F906825178BED1400BE9B09 /* SourceQuadShader.vsh in Resources */,
 				4F906826178BED1400BE9B09 /* SwitchRGB.fsh in Resources */,
 				4F906750178AB44000BE9B09 /* giant.pvr in Resources */,
-				4F90674C1789905D00BE9B09 /* SplashView.xib in Resources */,
-				4F90674D1789905D00BE9B09 /* SplashView~ipad.xib in Resources */,
 				4F90661717898D3E00BE9B09 /* InfoPlist.strings in Resources */,
 				4F90661F17898D3E00BE9B09 /* Default.png in Resources */,
 				4F90662117898D3E00BE9B09 /* Default@2x.png in Resources */,
 				4F90662317898D3E00BE9B09 /* Default-568h@2x.png in Resources */,
-				4F90662C17898D3E00BE9B09 /* ViewController~ipad.xib in Resources */,
+				4F90662C17898D3E00BE9B09 /* ViewController.xib in Resources */,
 				4F90673317898EB700BE9B09 /* Dropico.bundle in Resources */,
 				4F8862AE178D5D4000D8A367 /* Photo.jpg in Resources */,
 				4F8862B2178D94BA00D8A367 /* Blue.ppng in Resources */,
 				4F8862B4178EB04200D8A367 /* Paper.jpg in Resources */,
 				4F8862B6178EB0C400D8A367 /* Brush2.ppng in Resources */,
-				4F853B16179555F100FBEB06 /* ViewController.xib in Resources */,
 				4FC33C8D17A5491000C1F47B /* Valley_Oahu.ppng in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -685,11 +688,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				4F90674E1789994300BE9B09 /* DMBrushView.m in Sources */,
-				4F90674B1789901200BE9B09 /* SplashView.m in Sources */,
-				4F90674617898FE400BE9B09 /* AppManager.m in Sources */,
 				4F90661917898D3E00BE9B09 /* main.m in Sources */,
 				4F90661D17898D3E00BE9B09 /* AppDelegate.m in Sources */,
-				4F90662617898D3E00BE9B09 /* ViewController.m in Sources */,
 				4F9067D4178BED1400BE9B09 /* DMBlend.m in Sources */,
 				4F9067D5178BED1400BE9B09 /* DMContextLock.m in Sources */,
 				4F9067D6178BED1400BE9B09 /* DMFactory.m in Sources */,
@@ -708,7 +708,9 @@
 				4F906827178BED1400BE9B09 /* Semaphore.m in Sources */,
 				4F906828178BED1400BE9B09 /* ZipFileHelper.m in Sources */,
 				4F90682B178BF18A00BE9B09 /* DMBrush.m in Sources */,
-				4F4C8A1917A7FC76003B0B2D /* DMBrushMarker.m in Sources */,
+				4FDF27B717AFD99C0062BFDF /* DMBrushTouche.m in Sources */,
+				4FDF27BA17AFE9B50062BFDF /* DMBrushSpray.m in Sources */,
+				4FDF27BF17B113000062BFDF /* ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -723,12 +725,12 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		4F90662A17898D3E00BE9B09 /* ViewController~ipad.xib */ = {
+		4F90662A17898D3E00BE9B09 /* ViewController.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				4F90662B17898D3E00BE9B09 /* en */,
 			);
-			name = "ViewController~ipad.xib";
+			name = ViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -746,7 +748,8 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Ofer Rubinstein (37ELBJJV3H)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Ofer Rubinstein (37ELBJJV3H)";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -761,6 +764,8 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "338A7057-5944-4C4A-99E1-9776E10AAAA2";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "338A7057-5944-4C4A-99E1-9776E10AAAA2";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -778,7 +783,8 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Ofer Rubinstein (37ELBJJV3H)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Ofer Rubinstein (37ELBJJV3H)";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -786,6 +792,8 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "338A7057-5944-4C4A-99E1-9776E10AAAA2";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "338A7057-5944-4C4A-99E1-9776E10AAAA2";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;

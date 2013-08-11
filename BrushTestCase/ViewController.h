@@ -1,20 +1,16 @@
 //
-//  MainView.h
-//  MotionFX
+//  ViewController2.h
+//  BrushTestCase
 //
-//  Created by Nadav on 5/28/13.
-//  Copyright (c) 2013 Dropico Media LTD. All rights reserved.
+//  Created by Ofer Rubinstein on 8/6/13.
+//  Copyright (c) 2013 Ofer Rubinstein. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
-#import "DMBrushView.h"
-//#import "EasyTableView.h"
+@class DMBrushView;
 
-#define RGBA(R,G,B,A)   [UIColor colorWithRed:(float) R/255 green:(float) G/255 blue:(float) B/255 alpha: A]
-
-@interface ViewController : UIViewController <UIScrollViewDelegate, UIImagePickerControllerDelegate,UINavigationControllerDelegate>
+@interface ViewController : UIViewController
 {
-    IBOutlet    DMBrushView * collageView;
+    //IBOutlet    DMBrushView * collageView;
 }
-
 @end

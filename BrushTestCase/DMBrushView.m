@@ -9,6 +9,8 @@
 #import "DMBrushView.h"
 #import "DMView.h"
 #import "DMBrush.h"
+#import "DMBrushTouche.h"
+#import "DMBrushSpray.h"
 #import <Dropico/Dropico.h>
 #import "DMTexture+Extra.h"
 
@@ -48,14 +50,19 @@
     
     gRenderRect = CGRectMake(0, 0, self.frame.size.width, self.frame.size.height);
 
-    brush = [[DMBrush alloc] init];
-    [brush setColor:DMMakeColor(1.0, 1.0, 0.5)];
+    brush = [[DMBrushSpray alloc] init];
+    [self setBackground:nil];
 }
 
 
 - (void)loadBrushWithType:(DMBrushType)type
 {
-    brush = [[DMBrush alloc] init];
+    if (type==DMBrushTypeInk)
+        brush = [[DMBrush alloc] init];
+    else if (type==DMBrushTypeTouche)
+        brush = [[DMBrushTouche alloc] init];
+    else if (type==DMBrushTypeSpray)
+        brush = [[DMBrushSpray alloc] init];
 }
 
 - (void)setSize:(double)size
@@ -156,7 +163,10 @@ double gRetinaFactor = 2.0;
     else
     {
         if (!texture1)
-            texture1 = [[[DMGraphics manager] factory] createTarget:viewRect.size.width*gRetinaFactor/2.0 height:viewRect.size.height*gRetinaFactor/2.0];
+        {
+            texture1 = [[[DMGraphics manager] factory] createTarget:viewRect.size.width height:viewRect.size.height isDepth:YES];
+            [texture1 clearWhite];
+        }
         [brush renderBrushForTarget:texture1];
     }
     if (texture1)
@@ -166,6 +176,7 @@ double gRetinaFactor = 2.0;
 }
 
 double lastTouch = 0.0;
+CGPoint lastPoint, lastLook;
 
 - (void) touchesBegan:(NSSet*)touches withEvent:(UIEvent*)event
 {
@@ -173,6 +184,7 @@ double lastTouch = 0.0;
         currentErase = nil;
     if (currentErase)
         return;
+//    NSLog (@"************");
     lastTouch = event.timestamp;
     if ([touches count]>1)
     {
@@ -193,6 +205,8 @@ double lastTouch = 0.0;
     CGPoint point = [ [touches anyObject] locationInView:self];
     point.x*=gRetinaFactor;
     point.y*=gRetinaFactor;
+    lastPoint = point;
+    lastLook = CGPointMake(0, 0);
 
     [brush drawStroke:(DMBrushStrokeData){point, 1.0/60.0}];
 }
@@ -221,9 +235,42 @@ double lastTouch = 0.0;
     CGPoint point = [ [touches anyObject] locationInView:self];
     point.x*=gRetinaFactor;
     point.y*=gRetinaFactor;
-    double delta = event.timestamp-lastTouch;
-    lastTouch = event.timestamp;
-    [brush drawStroke:(DMBrushStrokeData){point, delta}];
+    CGPoint n1;
+    n1.x = point.x-lastPoint.x;
+    n1.y = point.y-lastPoint.y;
+    float l = sqrt(n1.x*n1.x+n1.y*n1.y);
+    n1.x/=l;
+    n1.y/=l;
+    float dot = n1.x*lastLook.x+n1.y*lastLook.y;
+    if (dot>0.3 || sqrt((lastPoint.x-point.x)*(lastPoint.x-point.x)+(lastPoint.y-point.y)*(lastPoint.y-point.y))>20.0)
+    {
+        double delta = event.timestamp-lastTouch;
+        lastTouch = event.timestamp;
+        lastPoint = point;
+        [brush drawStroke:(DMBrushStrokeData){point, delta}];
+        lastLook = n1;
+    }
+/*    else
+    {
+        CGPoint n1;
+        n1.x = point.x-lastPoint.x;
+        n1.y = point.y-lastPoint.y;
+        float l = sqrt(n1.x*n1.x+n1.y*n1.y);
+        n1.x/=l;
+        n1.y/=l;
+        float dot = n1.x*lastLook.x+n1.y*lastLook.y;
+        if (dot<0.0)
+        {
+            point.x-=2.0*l*dot*lastLook.x;
+            point.y-=2.0*l*dot*lastLook.y;
+            n1.x = point.x-lastPoint.x;
+            n1.y = point.y-lastPoint.y;
+            l = sqrt(n1.x*n1.x+n1.y*n1.y);
+            n1.x/=l;
+            n1.y/=l;
+            lastLook = n1;
+        }
+    }*/
 }
 
 

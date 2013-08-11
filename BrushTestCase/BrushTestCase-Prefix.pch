@@ -13,9 +13,4 @@
     #import "DMGraphics.h"
     //#import "DataManager.h"
     #import <Foundation/Foundation.h>
-    #import "AppManager.h"
-    //#import "DMImagePicker.h"
-    //#import "Constants.h"
-    //#import "SVProgressHUD.h"
-    //#import "SoundManager.h"
 #endif

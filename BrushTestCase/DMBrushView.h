@@ -1,5 +1,4 @@
-//
-//  DMCollageView.h
+
 //  PhotoCollage
 //
 //  Created by Ofer Rubinstein on 6/27/13.
@@ -9,6 +8,7 @@
 #import <GLKit/GLKit.h>
 typedef enum _DMBrushType {
     DMBrushTypeSpray,
+    DMBrushTypeTouche,
     DMBrushTypeMarker,
     DMBrushTypeInk
 } DMBrushType;
@@ -16,7 +16,6 @@ typedef enum _DMBrushType {
 @class DMBrush;
 
 @interface DMBrushView : GLKView<GLKViewDelegate, DMGraphicsDelegate>
-
 - (void)setBackground:(DMTexture *)background;
 - (void)loadBrushWithType:(DMBrushType)type;
 - (void)setSize:(double)size;
